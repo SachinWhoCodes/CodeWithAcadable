@@ -690,6 +690,11 @@ body {
   border-inline-end: 1px solid var(--gainsboro);
 }
 
+.title-icon{
+  width:50px!important;
+  height:50px!important;
+}
+
 .class-card .card-title { transition: var(--transition-1); }
 
 .class-card .card-title:is(:hover, :focus) { color: var(--coquelicot); }
