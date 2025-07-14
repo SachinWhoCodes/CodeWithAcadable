@@ -2,205 +2,751 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acadable - Learn, Build, Contribute</title>
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap" rel="stylesheet" />
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
+
 </head>
 
 <body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
   <header class="header" data-header>
     <div class="container">
+
       <a href="#" class="logo">
-        <ion-icon name="code-working-sharp" aria-hidden="true"></ion-icon>
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
         <span class="span">Acadable</span>
       </a>
+
       <nav class="navbar" data-navbar>
+
         <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
           <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
         </button>
+
         <ul class="navbar-list">
-          <li><a href="#home" class="navbar-link active" data-nav-link>Home</a></li>
-          <li><a href="#about" class="navbar-link" data-nav-link>About Us</a></li>
-          <li><a href="#class" class="navbar-link" data-nav-link>Courses</a></li>
-          <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
-          <li><a href="#" class="navbar-link" data-nav-link>Contact Us</a></li>
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="#class" class="navbar-link" data-nav-link>Classes</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
         </ul>
+
       </nav>
-      <a href="#" class="btn btn-secondary">Join Acadable</a>
+
+      <a href="#" class="btn btn-secondary">Let's Acadable</a>
+
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </button>
+
     </div>
   </header>
 
+
+
+
+
   <main>
     <article>
-      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero"
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
         style="background-image: url('./assets/images/hero-bg.png')">
         <div class="container">
+
           <div class="hero-content">
-            <p class="hero-subtitle"><strong class="strong">The Future of</strong> Tech Education</p>
+
+            <p class="hero-subtitle">
+              <strong class="strong">THE FUTURE OF</strong>Tech Education
+            </p>
+
             <h1 class="h1 hero-title">Learn. Build. Contribute.</h1>
+
             <p class="section-text">
               Acadable is where students don’t just learn—they create. From coding fundamentals to live open-source projects, our ecosystem builds real-world tech leaders.
             </p>
+
             <a href="#" class="btn btn-primary">Get Started</a>
+
           </div>
+
           <div class="hero-banner">
-            <img src="./assets/images/hero-banner.png" class="w-100" />
+
+            <img src="./assets/images/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">
+
+            <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
+              class="abs-img abs-img-1">
+            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+
           </div>
+
         </div>
       </section>
 
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
       <section class="section about" id="about" aria-label="about">
         <div class="container">
+
           <div class="about-banner has-after">
-            <img src="./assets/images/about-banner.png" class="w-100" />
+            <img src="./assets/images/about-banner.png" width="660" height="648" loading="lazy" alt="about banner"
+              class="w-100">
+
+            <img src="./assets/images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-1">
+            <img src="./assets/images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-2">
+
+            <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+              class="abs-img w-100">
           </div>
+
           <div class="about-content">
+
             <p class="section-subtitle">About Acadable</p>
+
             <h2 class="h2 section-title">From Courses to Codebases</h2>
+
             <p class="section-text">
               Launched in 2022 as Classmate Teachers, we rebranded to Acadable in December 2022. Our journey grew from exam prep and spoken English to becoming a full-stack tech learning platform.
             </p>
+
             <p class="section-text">
               In January 2024, we launched Programming++, a vibrant student tech community across 3 campuses and 3000+ learners. Now, we're building open-source projects with real-world impact—student-led, Acadable-powered.
             </p>
-            <a href="#" class="btn btn-primary">Explore Our Vision</a>
+
+            <div class="wrapper">
+
+              <div class="about-coach">
+
+                <figure class="coach-avatar">
+                  <img src="./assets/images/about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer">
+                </figure>
+
+                <div>
+                  <h3 class="h3 coach-name">Sachin Verma</h3>
+
+                  <p class="coach-title">Founder</p>
+                </div>
+
+              </div>
+
+              <a href="#" class="btn btn-primary">Linkedin</a>
+
+            </div>
+
           </div>
+
         </div>
       </section>
+
+
+
+
+
+      <!-- 
+        - #VIDEO
+      -->
+
+      <section class="section video" aria-label="video">
+        <div class="container">
+
+          <div class="video-card has-before has-bg-image"
+            style="background-image: url('./assets/images/video-banner.jpg')">
+
+            <h2 class="h2 card-title">Explore Acadable's Ecosystem</h2>
+
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="#" class="btn-link has-before">Watch More</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CLASS
+      -->
 
       <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
         style="background-image: url('./assets/images/classes-bg.png')">
         <div class="container">
-          <p class="section-subtitle">Courses</p>
+
+          <p class="section-subtitle">Our Courses</p>
+
           <h2 class="h2 section-title text-center">What You Can Learn</h2>
+
           <ul class="class-list has-scrollbar">
+
             <li class="scrollbar-item">
               <div class="class-card">
-                <h3 class="h3 card-title">Web Development</h3>
-                <p class="card-text">Frontend & Backend development using modern stacks like React, Node, Firebase, etc.</p>
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-1.jpg" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Programming Languages</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Master C++, Python, Java, and more with beginner to advanced content.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">85%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
               </div>
             </li>
+
             <li class="scrollbar-item">
               <div class="class-card">
-                <h3 class="h3 card-title">Programming Languages</h3>
-                <p class="card-text">Master C++, Python, Java, and more with beginner to advanced content.</p>
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-2.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-2.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Competitive Coding</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Prepare for ICPC, Codeforces, Leetcode, and other contests with real problems.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">70%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
               </div>
             </li>
+
             <li class="scrollbar-item">
               <div class="class-card">
-                <h3 class="h3 card-title">Competitive Coding</h3>
-                <p class="card-text">Prepare for ICPC, Codeforces, Leetcode, and other contests with real problems.</p>
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-3.jpg" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-3.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Open Source Internship</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                   Contribute to our funded open-source projects. Top contributors become paid interns.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">90%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
               </div>
             </li>
+
             <li class="scrollbar-item">
               <div class="class-card">
-                <h3 class="h3 card-title">Open Source Internship</h3>
-                <p class="card-text">Contribute to our funded open-source projects. Top contributors become paid interns.</p>
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-4.jpg" width="416" height="240" loading="lazy" alt="The Fitness Pack"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-4.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Web Development</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                   Frontend & Backend development using modern stacks like React, Node, Firebase, etc.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">60%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
               </div>
             </li>
+
           </ul>
+
         </div>
       </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
 
       <section class="section blog" id="blog" aria-label="blog">
         <div class="container">
+
           <p class="section-subtitle">Community Updates</p>
+
           <h2 class="h2 section-title text-center">What’s New at Acadable</h2>
+
           <ul class="blog-list has-scrollbar">
+
             <li class="scrollbar-item">
               <div class="blog-card">
-                <h3 class="h3 card-title">Programming++ Community Hits 3000+ Members</h3>
-                <p class="card-text">Our student-led initiative now has 3000+ learners across 3 campuses and growing fast.</p>
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-1.jpg" width="440" height="270" loading="lazy"
+                    alt="Going to the gym for the first time" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Programming++ Community Hits 3000+ Members</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Our student-led initiative now has 3000+ learners across 3 campuses and growing fast.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Congrats!</a>
+
+                </div>
+
               </div>
             </li>
+
             <li class="scrollbar-item">
               <div class="blog-card">
-                <h3 class="h3 card-title">Launching Open Source Projects</h3>
-                <p class="card-text">Acadable is building real-world tools for the developer ecosystem—100% open and student-powered.</p>
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-2.jpg" width="440" height="270" loading="lazy"
+                    alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Launching Open Source Projects</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Acadable is building real-world tools for the developer ecosystem—100% open and student-powered.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Interest Form</a>
+
+                </div>
+
               </div>
             </li>
+
             <li class="scrollbar-item">
               <div class="blog-card">
-                <h3 class="h3 card-title">Internships with Impact</h3>
-                <p class="card-text">No more unpaid internships. Top student contributors are offered paid roles with real responsibilities.</p>
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-3.jpg" width="440" height="270" loading="lazy"
+                    alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Internships with Impact</a>
+                  </h3>
+
+                  <p class="card-text">
+                    No more unpaid internships. Top student contributors are offered paid roles with real responsibilities.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Download Guide</a>
+
+                </div>
+
               </div>
             </li>
+
           </ul>
+
         </div>
       </section>
+
     </article>
   </main>
 
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
   <footer class="footer">
+
     <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
       <div class="container">
+
         <div class="footer-brand">
+
           <a href="#" class="logo">
-            <ion-icon name="code-working-sharp"></ion-icon>
+            <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
             <span class="span">Acadable</span>
           </a>
+
           <p class="footer-brand-text">
-            Learn, build, and lead in tech with Acadable’s ecosystem of knowledge and innovation.
+           Acadable is no longer just an ed-tech platform — it's evolving into a tech-first ecosystem with a mission to solve real-world problems through open-source, student-led innovation.
           </p>
+
+          <div class="wrapper">
+
+            <img src="./assets/images/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            <ul class="footer-brand-list">
+
+              <li>
+                <p class="footer-brand-title">Monday - Friday</p>
+
+                <p>7:00Am - 10:00Pm</p>
+              </li>
+
+              <li>
+                <p class="footer-brand-title">Saturday - Sunday</p>
+
+                <p>7:00Am - 2:00Pm</p>
+              </li>
+
+            </ul>
+
+          </div>
+
         </div>
 
         <ul class="footer-list">
-          <li><p class="footer-list-title has-before">Quick Links</p></li>
-          <li><a href="#" class="footer-link">Home</a></li>
-          <li><a href="#" class="footer-link">About</a></li>
-          <li><a href="#" class="footer-link">Courses</a></li>
-          <li><a href="#" class="footer-link">Blog</a></li>
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Classes</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
         </ul>
 
         <ul class="footer-list">
-          <li><p class="footer-list-title has-before">Contact Us</p></li>
-          <li><address class="footer-link">Email: team@acadable.com</address></li>
-          <li><a href="tel:+919999999999" class="footer-link">+91 99999 99999</a></li>
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              39, Devipuram Colony, Shivpuri, MP, India
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:18001213637" class="footer-link">+91 9691600315</a>
+
+              <a href="tel:+915552348765" class="footer-link">+91 8819996906</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@fitlife.com" class="footer-link">acadableindia@gmail.com</a>
+
+              <a href="mailto:services@fitlife.com" class="footer-link">team@acadable.com</a>
+            </div>
+          </li>
+
         </ul>
 
         <ul class="footer-list">
-          <li><p class="footer-list-title has-before">Newsletter</p></li>
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
           <li>
             <form action="" class="footer-form">
-              <input type="email" name="email" placeholder="Email Address" required class="input-field" />
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
               <button type="submit" class="btn btn-primary" aria-label="Submit">
                 <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
               </button>
             </form>
           </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
         </ul>
+
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
+
         <p class="copyright">
-          &copy; 2025 Acadable. All Rights Reserved.
+          &copy; 2025 Acadable. All Rights Reserved By <a href="https://www.linkedin.com/company/acadable/" class="copyright-link">Acadable</a>
         </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+
+        </ul>
+
       </div>
     </div>
+
   </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
 
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
   </a>
 
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
   <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
