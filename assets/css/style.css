@@ -120,6 +120,11 @@ ion-icon { display: block; }
 
 img { height: auto; }
 
+.small-50-img{
+  height: 50px;
+  width: 50px;
+}
+
 input,
 button {
   background: none;
