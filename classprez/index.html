@@ -5,221 +5,682 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClassPrezz - Smart Attendance & Task Manager</title>
+  <title>ClassPrezz - Attendance & Task Manager for Students</title>
 
-  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" type="image/png">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!-- 
+    - google font link
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap"
     rel="stylesheet">
 </head>
 
 <body id="top">
 
-  <!-- HEADER -->
+  <!-- 
+    - #HEADER
+  -->
+
   <header class="header" data-header>
     <div class="container">
+
       <a href="#" class="logo">ClassPrezz</a>
+
       <nav class="navbar" data-navbar>
         <ul class="navbar-list container">
-          <li><a href="#home" class="navbar-link active">Home</a></li>
-          <li><a href="#features" class="navbar-link">Features</a></li>
-          <li><a href="#about" class="navbar-link">About</a></li>
-          <li><a href="#app" class="navbar-link">App</a></li>
-          <li><a href="#blog" class="navbar-link">News</a></li>
-          <li><a href="#contact" class="navbar-link">Contact</a></li>
-          <li><a href="#" class="btn btn-primary">Get Started</a></li>
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#features" class="navbar-link" data-nav-link>Features</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#app" class="navbar-link" data-nav-link>App</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>News</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </li>
+
         </ul>
       </nav>
-      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
+
     </div>
   </header>
+
+
+
+
 
   <main>
     <article>
 
-      <!-- HERO -->
-      <section class="section hero" id="home">
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" id="home">
         <div class="container">
+
           <div class="hero-content">
-            <p class="section-subtitle">Track Smarter. Achieve More.</p>
-            <h1 class="h1 hero-title">ClassPrezz – Attendance, Tasks & Opportunities</h1>
+
+            <p class="section-subtitle">Free for Students — 12 day trial</p>
+
+            <h1 class="h1 hero-title">Simplify Attendance. Manage Tasks. Get Internships — ClassPrezz</h1>
+
             <p class="section-text">
-              Manage your classes, track attendance, set tasks, and access internship opportunities – all in one app.
-              Free users get 10 subjects & 10 tasks. Go Premium for unlimited access and exclusive internships.
+              ClassPrezz helps students track attendance, manage tasks and discover internship opportunities.
+              Free users can manage up to 10 subjects and 10 tasks — upgrade with a license key for unlimited access
+              and premium internships.
             </p>
+
             <ul class="btn-list">
+
               <li>
-                <a href="#" aria-label="Download from app store">
-                  <img src="./assets/images/app-store.png" width="185" height="69" alt="app store" class="img">
+                <a href="#" class="btn-item-link" aria-label="Download from app store">
+                  <img src="./assets/images/app-store.png" width="185" height="69" alt="Download on the App Store" class="img">
                 </a>
               </li>
+
               <li>
-                <a href="#" aria-label="Download from play store">
-                  <img src="./assets/images/play-store.png" width="185" height="69" alt="play store" class="img">
+                <a href="#" class="btn-item-link" aria-label="Download from play store">
+                  <img src="./assets/images/play-store.png" width="185" height="69" alt="Get it on Google Play" class="img">
                 </a>
               </li>
+
             </ul>
+
           </div>
+
           <figure class="hero-banner">
-            <img src="https://images.unsplash.com/photo-1555431189-0fabf2667795" width="769" height="804" alt="Students using app" class="w-100">
+            <img src="./assets/images/hero-banner.png" width="769" height="804" alt="Students checking attendance in app" class="w-100">
           </figure>
+
         </div>
       </section>
 
-      <!-- FEATURES -->
-      <section class="section features" id="features">
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features" aria-label="features">
         <div class="container">
-          <p class="section-subtitle">Our Features</p>
-          <h2 class="h2 section-title">Why Choose ClassPrezz?</h2>
+
+          <p class="section-subtitle">App Features</p>
+
+          <h2 class="h2 section-title">Powerful tools for students</h2>
+
           <ul class="features-list">
 
             <li class="features-item">
               <div class="features-card">
+
                 <div class="card-icon">
-                  <ion-icon name="calendar-outline"></ion-icon>
+                  <ion-icon name="create-outline" aria-hidden="true"></ion-icon>
                 </div>
-                <h3 class="h3 card-title">Attendance Tracking</h3>
-                <p class="card-text">Mark attended, missed, cancelled, or replaced classes with ease.</p>
+
+                <h3 class="h3 card-title">Quick Attendance</h3>
+
+                <p class="card-text">
+                  Mark classes as attended, missed, cancelled or replaced in a single tap.
+                </p>
+
               </div>
             </li>
 
             <li class="features-item">
               <div class="features-card">
+
                 <div class="card-icon">
-                  <ion-icon name="checkmark-done-outline"></ion-icon>
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
                 </div>
-                <h3 class="h3 card-title">Task Manager</h3>
-                <p class="card-text">Stay on top of assignments, projects, and deadlines.</p>
+
+                <h3 class="h3 card-title">Reliable Data</h3>
+
+                <p class="card-text">
+                  Your records are stored safely and synced with your account for cross-device access.
+                </p>
+
               </div>
             </li>
 
             <li class="features-item">
               <div class="features-card">
+
                 <div class="card-icon">
-                  <ion-icon name="lock-closed-outline"></ion-icon>
+                  <ion-icon name="settings-outline" aria-hidden="true"></ion-icon>
                 </div>
-                <h3 class="h3 card-title">Premium Unlock</h3>
-                <p class="card-text">Unlimited subjects & tasks with exclusive internship access.</p>
+
+                <h3 class="h3 card-title">Smart Attendance Rules</h3>
+
+                <p class="card-text">
+                  Automatically calculate attendance percentage and get notified when you are below thresholds.
+                </p>
+
               </div>
             </li>
 
             <li class="features-item">
               <div class="features-card">
+
                 <div class="card-icon">
-                  <ion-icon name="briefcase-outline"></ion-icon>
+                  <ion-icon name="cube-outline" aria-hidden="true"></ion-icon>
                 </div>
-                <h3 class="h3 card-title">Internships</h3>
-                <p class="card-text">Find free and premium internship opportunities directly in the app.</p>
+
+                <h3 class="h3 card-title">Free Trial & License Keys</h3>
+
+                <p class="card-text">
+                  Upgrade via license keys you get from our channels — no in-app payment required.
+                </p>
+
               </div>
             </li>
 
           </ul>
+
         </div>
       </section>
 
-      <!-- ABOUT -->
-      <section class="section about" id="about">
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
         <div class="container">
+
           <figure class="about-banner">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" width="1262" height="1357" alt="Students working together" class="w-100">
+            <img src="./assets/images/about-banner.png" width="1262" height="1357" loading="lazy" alt="Students collaborating" class="w-100">
           </figure>
+
           <div class="about-content">
-            <p class="section-subtitle">Who We Are</p>
-            <h2 class="h2 section-title">Built for Students, Loved by Students</h2>
+
+            <p class="section-subtitle">About ClassPrezz</p>
+
+            <h2 class="h2 section-title">Helping students take control of their academics</h2>
+
             <p class="section-text">
-              ClassPrezz is designed to simplify academic life – making attendance tracking and task management effortless while opening doors to internships and career growth.
+              ClassPrezz combines attendance tracking, task management and a curated internship board — giving students a
+              single app to stay organized and improve outcomes.
             </p>
+
             <ul class="about-list">
+
               <li class="about-item">
-                <div class="item-icon"><ion-icon name="phone-portrait"></ion-icon></div>
-                <div>
-                  <h3 class="h3 item-title">User-Friendly Design</h3>
-                  <p class="item-text">A clean and intuitive interface for stress-free academic management.</p>
+
+                <div class="item-icon">
+                  <ion-icon name="folder" aria-hidden="true"></ion-icon>
                 </div>
+
+                <div>
+                  <h3 class="h3 item-title">Designed for Students</h3>
+
+                  <p class="item-text">
+                    A minimal, easy interface so you spend less time managing and more time learning.
+                  </p>
+                </div>
+
               </li>
+
               <li class="about-item">
-                <div class="item-icon"><ion-icon name="stats-chart"></ion-icon></div>
-                <div>
-                  <h3 class="h3 item-title">Smart Analytics</h3>
-                  <p class="item-text">Track attendance percentage and performance instantly.</p>
+
+                <div class="item-icon">
+                  <ion-icon name="pie-chart" aria-hidden="true"></ion-icon>
                 </div>
+
+                <div>
+                  <h3 class="h3 item-title">Insightful Analytics</h3>
+
+                  <p class="item-text">
+                    See attendance percentages, task completion trends and simple suggestions to improve your scores.
+                  </p>
+                </div>
+
               </li>
+
             </ul>
+
             <a href="#" class="btn btn-secondary">Discover More</a>
+
           </div>
+
         </div>
       </section>
 
-      <!-- APP -->
-      <section class="section app" id="app">
+
+
+
+
+      <!-- 
+        - #ABOUT 2
+      -->
+
+      <section class="section about-2" aria-label="about">
         <div class="container">
-          <figure class="app-banner">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" width="449" height="608" alt="ClassPrezz app preview" class="w-100">
-          </figure>
-          <div class="app-content">
-            <p class="section-subtitle">Get Started Today</p>
-            <h2 class="h2 section-title">Download ClassPrezz Now</h2>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Simple & Focused</p>
+
+            <h2 class="h2 section-title">Built to help you manage time and attendance</h2>
+
             <p class="section-text">
-              Available for free with premium upgrades via license key. Join thousands of students managing their academic life with ClassPrezz.
+              ClassPrezz is lightweight, fast, and focused on the features that matter: subjects, schedules, attendance and tasks.
             </p>
-            <ul class="btn-list">
-              <li><a href="#"><img src="./assets/images/app-store.png" width="185" height="69" alt="app store"></a></li>
-              <li><a href="#"><img src="./assets/images/play-store.png" width="185" height="69" alt="play store"></a></li>
-            </ul>
+
+            <p class="section-text">
+              Use the app to backfill past attendance, set weekly schedules, and let ClassPrezz calculate your overall
+              attendance percentage.
+            </p>
+
+            <a href="#" class="btn btn-secondary">Discover More</a>
+
           </div>
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner-2.png" width="1146" height="1226" loading="lazy" alt="App screens and students" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #APP
+      -->
+
+      <section class="section app" aria-label="app" id="app">
+        <div class="container">
+
+          <figure class="app-banner">
+            <img src="./assets/images/app.png" width="449" height="608" loading="lazy" alt="ClassPrezz app preview" class="w-100">
+          </figure>
+
+          <div class="app-content">
+
+            <p class="section-subtitle">Download ClassPrezz</p>
+
+            <h2 class="h2 section-title">Install and start tracking today</h2>
+
+            <p class="section-text">
+              Download the mobile app for Android and iOS. Free users can manage 10 subjects and 10 tasks; premium users
+              get unlimited subjects, unlimited tasks and access to premium internships.
+            </p>
+
+            <ul class="btn-list">
+
+              <li>
+                <a href="#" class="btn-item-link" aria-label="Download from app store">
+                  <img src="./assets/images/app-store.png" width="185" height="69" alt="app store" class="img">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="btn-item-link" aria-label="Download from play store">
+                  <img src="./assets/images/play-store.png" width="185" height="69" alt="play store" class="img">
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle">From Our Team</p>
+
+          <h2 class="h2 section-title">Tips, Updates and Student Stories</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
+                  <img src="./assets/images/blog-1.jpg" width="768" height="558" loading="lazy"
+                    alt="How to manage classes" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2025-05-22">May 22, 2025</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">0 Comments</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">How to Keep Attendance Accurate — 5 Tips</a>
+                  </h3>
+
+                  <a href="#" class="btn btn-outline">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
+                  <img src="./assets/images/blog-2.jpg" width="768" height="558" loading="lazy"
+                    alt="Student productivity" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2025-04-10">Apr 10, 2025</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">0 Comments</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Make Tasks Work For You: A Student's Guide</a>
+                  </h3>
+
+                  <a href="#" class="btn btn-outline">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
+                  <img src="./assets/images/blog-3.jpg" width="768" height="558" loading="lazy"
+                    alt="Internship advice" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2025-03-30">Mar 30, 2025</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">0 Comments</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">How ClassPrezz Helps You Find Better Internships</a>
+                  </h3>
+
+                  <a href="#" class="btn btn-outline">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
         </div>
       </section>
 
     </article>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer" id="contact">
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
     <div class="section footer-top">
       <div class="container">
+
         <div class="footer-brand">
+
           <a href="#" class="logo">ClassPrezz</a>
+
           <p class="section-text">
-            The all-in-one academic companion – track attendance, manage tasks, and explore internship opportunities.
+            ClassPrezz — the all-in-one student companion for attendance, tasks and internship discovery.
           </p>
+
           <ul class="social-list">
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
           </ul>
+
         </div>
+
         <ul class="footer-list">
-          <li><p class="footer-list-title">Quick Links</p></li>
-          <li><a href="#about" class="footer-link">About</a></li>
-          <li><a href="#features" class="footer-link">Features</a></li>
-          <li><a href="#app" class="footer-link">Download</a></li>
-          <li><a href="#blog" class="footer-link">News</a></li>
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#features" class="footer-link">Core Services</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="footer-link">Our Team</a>
+          </li>
+
+          <li>
+            <a href="#app" class="footer-link">Pricing Plan</a>
+          </li>
+
         </ul>
+
         <ul class="footer-list">
-          <li><p class="footer-list-title">Contact</p></li>
-          <li><ion-icon name="call-outline"></ion-icon> <a href="tel:+911234567890">+91 12345 67890</a></li>
-          <li><ion-icon name="mail-outline"></ion-icon> <a href="mailto:support@classprezz.com">support@classprezz.com</a></li>
-          <li><ion-icon name="map-outline"></ion-icon> <address>India</address></li>
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#app" class="footer-link">App Download</a>
+          </li>
+
+          <li>
+            <a href="#features" class="footer-link">How It Works</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
         </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Get In Touch</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+911234567890" class="item-link">+91 12345 67890</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:support@classprezz.com" class="item-link">support@classprezz.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+
+            <address class="item-link address">
+              India
+            </address>
+          </li>
+
+        </ul>
+
       </div>
     </div>
+
     <div class="footer-bottom">
       <div class="container">
-        <p class="copyright">© 2025 ClassPrezz. All Rights Reserved.</p>
+
+        <p class="copyright">
+          &copy; 2025 All Rights Reserved by <a href="#" class="copyright-link">ClassPrezz</a>.
+        </p>
+
       </div>
     </div>
+
   </footer>
 
-  <a href="#top" class="back-top-btn"><ion-icon name="chevron-up"></ion-icon></a>
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
   <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
